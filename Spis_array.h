@@ -86,7 +86,7 @@ public:
     }
     void pushback(type val)
     {
-        Node_array<type> *newnode=new Node_array(val);
+        Node_array<type> *newnode=new Node_array<type>(val);
         if(this->size_==0)
         {
             first=last=newnode;
@@ -101,7 +101,7 @@ public:
     }
     void insert(int index,type val)
     {
-        Node_array<type> *newnode=new Node_array(val);
+        Node_array<type> *newnode=new Node_array<type>(val);
         if(index==0)
         {
             if(size_==0)
@@ -267,7 +267,7 @@ public:
     }
     void pushback(type val)
     {
-        Node_array<type> *newnode=new Node_array(val);
+        Node_array<type> *newnode=new Node_array<type>(val);
         if(this->size_==0)
         {
             first=last=newnode;
@@ -281,7 +281,7 @@ public:
     }
     void insert(int index,type val)
     {
-        Node_array<type> *newnode=new Node_array(val);
+        Node_array<type> *newnode=new Node_array<type>(val);
         if(index==0)
         {
             if(size_==0)

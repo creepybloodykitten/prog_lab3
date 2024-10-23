@@ -18,7 +18,7 @@ public:
         }
         capacity=size_;
     }
-    Posled_arr(Posled_arr &&temp) noexcept : arr(temp.arr),size_(temp.size_),capacity(temp.capacity)
+    Posled_arr(Posled_arr &&temp) noexcept : size_(temp.size_),capacity(temp.capacity),arr(temp.arr)
     {
         temp.arr=nullptr;
         temp.size_=0;
